@@ -1,17 +1,29 @@
-<template>
+<!-- <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
+</template> -->
+<template>
+  <div id="app">
+    <div style="display: flex; justify-content: space-between;">
+      <PDFJSViewer :path="path" :fileName="name"></PDFJSViewer>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PDFJSViewer from './components/PDFJSViewer.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
+  components: { PDFJSViewer },
   name: 'App',
-  components: {
-    HelloWorld
+  data () {
+    return {
+      name: 'TeoriaConjuntosProbabilidades.pdf', //change which pdf file loads
+      path: 'lib/pdfjs/web/viewer.html' //path of the PDF.js viewer.html
+    }
   }
 }
 </script>
