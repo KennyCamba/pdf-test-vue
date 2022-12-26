@@ -10,19 +10,20 @@ export default {
   props: {
     fileName: String,
     path: String,
+    bookmark: String
   },
   data() {
     return {
-      bookmark: '',
+      
     };
   },
   methods: {
     navigate: function () {
-      if(this.bookmark.length == 0) {
-        this.bookmark = "#%5B%7B%22num%22%3A326%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C0%2C769.445%2C0.9949%5D";
-      } else {
-        this.bookmark = '';
-      }
+      // if(this.bookmark.length == 0) {
+      //   this.bookmark = "#%5B%7B%22num%22%3A326%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C0%2C769.445%2C0.9949%5D";
+      // } else {
+      //   this.bookmark = '';
+      // }
     }
   },
   computed: {
