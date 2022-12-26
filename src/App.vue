@@ -6,18 +6,20 @@
 </template> -->
 <template>
   <div id="app">
-    <div style="display: flex; justify-content: space-between;">
+    <div style="display: flex; justify-content: center;">
       <PDFJSViewer :path="path" :fileName="name"></PDFJSViewer>
     </div>
+    <PdfNavigator></PdfNavigator>
   </div>
 </template>
 
 <script>
-import PDFJSViewer from './components/PDFJSViewer.vue'
+import PDFJSViewer from './components/PDFJSViewer.vue';
+import PdfNavigator from './components/PdfNavigator.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  components: { PDFJSViewer },
+  components: { PDFJSViewer, PdfNavigator },
   name: 'App',
   data () {
     return {

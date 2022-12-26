@@ -1,9 +1,6 @@
 <template>
   <div style="display: flex; justify-content: space-between;">
     <iframe :src="getFilePath + bookmark" style="width: 100%; height: 100%;" ></iframe>
-    <button @click="navigate">
-      Navigate
-    </button>
   </div>
 </template>
 
